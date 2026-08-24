@@ -4,6 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="robots" content="noindex,nofollow" />
+
+  <!-- Google Analytics 4 (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C63TZL4X5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0C63TZL4X5');
+    // Track booking-intent clicks on any "BOEK NU" CTA.
+    document.addEventListener('click', function (e) {
+      if (e.target.closest('[data-book]')) gtag('event', 'book_click');
+    });
+  </script>
   <title>Magic Fingers Barbershop — Willemsweg, Nijmegen</title>
   <meta name="description" content="Magic Fingers Barbershop in Nijmegen — strakke knipbeurt, baardlijn en line-ups door Sheka. Willemsweg 27, Nijmegen." />
 
