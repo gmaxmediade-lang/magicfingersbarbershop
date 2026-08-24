@@ -133,11 +133,12 @@
     // Map our service button data-service value → Cal.com event type slug
     // (Will be used when Sheka connects a Cal.com account; until then we
     // fall back to a demo mode that simulates available slots.)
+    // Slugs must match the live Cal.com event-type slugs exactly.
     const SERVICE_SLUG = {
-      'cut': 'knipbeurt',
-      'cut-beard': 'knip-baard',
-      'beard': 'baard',
-      'kids': 'kinderknipbeurt'
+      'cut': 'knippen',
+      'cut-beard': 'knippen-baard',
+      'beard': 'baard-trim-lijn',
+      'kids': 'kinderen-knippen'
     };
 
     // Cached event types (loaded from /api/event-types on first open)
